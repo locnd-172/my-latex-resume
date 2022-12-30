@@ -1,0 +1,325 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{multicol}
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+ \usepackage[left=1cm, right=1.5cm, top=1cm, bottom=1cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+% \setlength{\makecvheadnamewidth}{18cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Loc}{Nguyen Dang} 
+% \title{Java Backend Developer Intern}
+\address{ Apartment block S203 - Vinhomes Grand Park, Nguyen Xien St., District.9, HCMC}
+\phone[mobile]{+84357543620}      % optional, remove / comment the line if not wanted
+\email{locnd.fpt@gmail.com}                               % optional, remove / comment the line if not wanted
+\social[github]{locnd-172}
+\social[linkedin]{locnd172}
+
+\newcommand*{\leetcodesocialsymbol}{\includegraphics[height=.7\baselineskip]{leetcode}}
+\collectionadd[leetcode]{socials}{\href{https://leetcode.com/locnd-fpt/}{locnd-fpt}}
+
+\newcommand*{\hackerranksocialsymbol}{\includegraphics[height=.7\baselineskip]{hackerrank}}
+\collectionadd[hackerrank]{socials}{\href{https://www.hackerrank.com/locnd_fpt}{locnd-fpt}}
+
+
+% \extrainfo{\textborn~17.02.2002 }
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle 
+\vspace{-25pt}
+I'm looking for a job opportunity as Data Engineer Fresher/Intern so I can experience practical software development environment. I have a strong desire to advance my career in back-end and data-related programming, especially using Java/Python.\\
+
+
+\vspace{-20pt}
+\section{Education}
+
+\begin{itemize}
+
+\item{
+\cventry
+{Binh Phuoc, Viet Nam}
+{Mathematics major, GPA 9.3 (out of 10)}
+{Quang Trung High School for the Gifteds}
+{Aug. 2017 -- Aug. 2022}{}{
+}}
+
+\item{
+\cventry
+{Ho Chi Minh City, Viet Nam}
+{BSc in Software Engineering, GPA 9.3 (out of 10)}
+{FPT University}
+{Sep. 2020 -- Dec. 2023 (Expected)}{}{
+}}
+
+\item{
+ \textbf{Relevant courseworks and certifications:} 
+ {\vspace{1pt}
+\begin{itemize}
+\item  Java OOP, Data Structures and Algorithm, Database, Web development, Discrete Math,  Probability and Statistic
+
+\end{itemize}
+}}
+\end{itemize}
+
+\vspace{-6pt}
+\section{Work Experience}
+\begin{itemize}
+\item{
+\cventry
+{}
+{FPT Software}
+{Asset Management System} 
+{Sep. 2022 -- Dec. 2022}
+{}
+{
+\begin{itemize}
+\item \textbf{Description:} A module built on top of Odoo, an open source ERP and CRM webapp, helps enterprises manage their fixed/non-current assets. The product supports the following basic business activities: deployment and withdrawal, repair, and auditing of assets.
+\vspace{1pt}
+\item \textbf{Position:} Backend Developer Intern
+\vspace{1pt}
+\item \textbf{Technologies:} Python3, Odoo 15, ORM, Docker, PostgreSQL, Ubuntu, Figma
+\vspace{1pt}
+\item \textbf{Responsibilities:}
+\begin{itemize}
+\item Collaborate with another 4 teammates to implement and present the asset management module.
+\vspace{1pt}
+\item Do research into asset management business logic relate to accounting and warehousing.
+\vspace{1pt}
+\item Design product prototype and demo workflows of the application using Figma.
+\vspace{1pt}
+\item Set the basis structure for the project and mainly in charge of the asset audit features.
+\item Assist team members in deciding the business rule and fixing bugs.
+\vspace{1pt}
+\item Clarify requirements with the project leader through communication to enhance usability.
+\end{itemize}
+\end{itemize}
+}}
+
+\end{itemize}
+
+
+\vspace{-6pt}
+\section{Projects}
+
+\begin{itemize}
+
+\item{
+\cventry
+{}
+{Python, Airflow, IBM DB2, PostgreSQL}
+{Book Product Data Pipeline - \href{https://github.com/locnd-172/book-product-data-pipeline-project}{\underline{\normalfont GitHub}}}
+{Dec. 2022}
+{}
+{\vspace{1pt}
+\begin{itemize}
+\item  An ETL data pipeline that able to scrape book product through REST API and store in data warehouse.
+\vspace{1pt}
+\item  The entire process of data ingestion is automated by Airflow.
+\vspace{1pt}
+\item  PostgreSQL is used as staging database to perform data cleaning.
+\vspace{1pt}
+\item  Built a simple dashboard with the data loaded into IBM DB2 on cloud.
+\end{itemize}
+}}
+
+\vspace{1.5pt}
+
+\item{
+\cventry
+{}
+{Python, Selenium, BeautifulSoup, }
+{Class Timetable Scheduler - \href{https://github.com/locnd-172/Automate-updating-GCal-with-university-timetable}{\underline{\normalfont GitHub}}}
+{Aug. 2022}
+{}
+{\vspace{1pt}
+\begin{itemize}
+\item  A program that automatically synchronize Google Calendar with the academic calendar.
+\vspace{1pt}
+\item  Use Selenium to extract class timetable for a certain semester from university site.
+\vspace{1pt}
+\item  Update schedule information to personal calendar with Google Calendar API.
+\end{itemize}
+}}
+
+\vspace{1.5pt}
+
+\item{
+\cventry
+{}
+{Java EE 6, MVC2, jQuery, TailwindCSS, MS SQL Server}
+{Sakura Hostel Management System  - \href{https://github.com/dat-nguyen-304/SE1618-Dolphin}{\underline{\normalfont GitHub}}}
+{May. 2022 -- Jul. 2022}
+{}
+{\vspace{1pt}
+\begin{itemize}
+\item  A system helps landlords manage in a smarter way and makes it easier for tenants to find hostel, .
+\vspace{1pt}
+\item  Design schema and involve in management of database utilizing MS SQL Server.
+\vspace{1pt}
+\item  Design and implement UI for the whole system using JSP and TailwindCSS.
+\vspace{1pt}
+\item  Build features related to managing hostels and rooms.
+\vspace{1pt}
+\end{itemize}
+}}
+
+\vspace{1.5pt}
+
+
+
+\item{
+\cventry
+{}
+{Java, FPGrowth, WEKA tool}
+{Frequent Patterns Mining of Invoices - \href{https://github.com/locnd-172/fpgrowth-algoirthm}{\underline{\normalfont GitHub}}}
+{Oct. 2021 -- Nov. 2021}
+{}
+{\vspace{1pt}
+\begin{itemize}
+\item  A study of a data mining's algorithm with the use of \href{http://archive.ics.uci.edu/ml/datasets/Online+Retail}{\textit{Online retails}} datase.
+\item  Implement FPGrowth algorithm to mine sets of frequent items over hundreds of thousands of invoices.
+\item  Compare project's results with WEKA tool's results, achieve an correctness of about 85\%, document the works.
+\end{itemize}
+}}
+\end{itemize}
+
+\vspace{-2pt}
+\section{Certificates}
+
+\begin{itemize}
+
+
+\begin{multicols}{2}
+
+\item \href{https://www.coursera.org/account/accomplishments/specialization/certificate/SBYGPBJATWUP}{IBM Data Engineer Specialization}
+
+\item \href{https://www.hackerrank.com/certificates/0fc4d5d2426d}{HackerRank SQL Advanced}
+
+\item \href{https://www.freecodecamp.org/certification/locngd283/back-end-development-and-apis}{Back End Development and APIs}
+
+\item \href{https://www.freecodecamp.org/certification/locngd283/data-analysis-with-python-v7}{Data Analysis with python}
+    
+\end{multicols}
+
+\end{itemize}
+
+\section{Achievements}
+
+\begin{itemize}
+\item \cvlanguage{2021-2022}{Honorable/Excellent Student in 5 semesters in a row (9 semesters in total, 4 remained)}{}
+\item \cvlanguage{2021}{100\% tuition fee university scholarship - \textbf{FPT University}}{}
+\item \cvlanguage{2020}{Attended at National Olympiad in Informatics}{}
+\item \cvlanguage{2020}{Silver Medal at Southern Provincial Traditional 30/4 Olympiad in Informatics}{}
+\item \cvlanguage{2020}{Second prize at Provincal Contest in Informatics }{}
+
+
+\end{itemize}
+\section{Technical skills}
+
+\begin{itemize}
+
+\item \textbf{Languages:} C/C++, Java, Python, SQL, Javascript, Shell Script
+
+\item \textbf{Frameworks/Libraries:} Numpy, Pandas, Matplotlib, Selenium, Odoo, TailwindCSS, Bootstrap
+
+\item \textbf{Development tools:} Visual Studio Code, NetBeans, Azure Data Studio, Jetbrains ecosystems
+
+\item \textbf{Technologies/Tools:} Linux, Git/Github, Docker, Airflow, Figma
+
+\end{itemize}
+
+
+\vspace{-2pt}
+\section{Another skills}
+
+\begin{itemize}
+\item Teamwork, Self-study, Research and planning, Creativity, Problem-solving, Analytic, Leadership
+\vspace{1pt}
+\item Languages:\textit{Vietnamese} (native language), \textit{English} (intermediate)
+\vspace{1pt}
+\item Microsoft office tools: Word, Excel, Powerpoint (intermediate)
+\vspace{1pt}
+\end{itemize}
+
+
+
+
+% \section{Extracurricular}
+
+% \begin{itemize}
+
+% \item{
+% \cventry
+% {Vung Tau, Viet Nam}
+% {Social project helps students get better understanding of Tech \& Design industry}
+% {Computerholic Community - \normalfont Head of Creativity Team}
+% {Mar. 2020 -- Sep. 2020}
+% {}
+% {\vspace{1.5pt}
+% \begin{itemize}
+% \item  Planned and developed the brand's concept and key visual
+% \item  Managed design and editing process of the team
+% \item  Assessed productivity of members
+% \end{itemize}
+% }}
+
+% \vspace{2pt}
+
+% \item{
+% \cventry
+% {Ho Chi Minh City, Viet Nam}
+% {A start-up project, collaborated with UEH, HCMUT students}
+% {Pario Steam Toy - \normalfont Member of Development Department}
+% {Feb. 2021 -- Oct. 2021}
+% {}
+% {\vspace{1.5pt}
+% \begin{itemize}
+% \item  Builing brand visuals, producing social media videos on Youtube channel.
+% \item  Developing product marketing strategy for a start-up project
+% \end{itemize}
+% }}
+
+% \end{itemize}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
